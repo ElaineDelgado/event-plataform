@@ -4,7 +4,7 @@ import { FormEvent } from 'react'
 import { useNavigate } from "react-router-dom"
 import { useCreateSubscriberMutation } from "../graphql/generated"
 
-export const Subscribe = () => {
+export const Subscriber = () => {
   const navigate = useNavigate()
 
   const [name, setName] = React.useState('')
