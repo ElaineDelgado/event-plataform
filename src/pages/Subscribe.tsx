@@ -10,6 +10,8 @@ export const Subscribe = () => {
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
 
+  const codeMockup = new URL("../assets/code-mockup.png", import.meta.url).href
+
   const [createSubscriber, { loading }] = useCreateSubscriberMutation()
 
   const handleSubscribe = async (event: FormEvent) => {
@@ -66,7 +68,7 @@ export const Subscribe = () => {
           </form>
         </div>
       </div>
-        <img src="/src/assets/code-mockup.png" alt="code mockup" className="mt-10" />
+        <img src={codeMockup} alt="code mockup" className="mt-10" />
     </div>
   )
 }
