@@ -32,7 +32,7 @@ export  const VideoPlayer = (props: VideoProps) => {
         </div>
       </div>
       <div className="p-8 max-w-[1100px] mx-auto">
-          <div className="flex items-start gap-16">
+          <div className="flex flex-col md:flex-row items-start gap-16">
             <div className="flex-1">
               <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
               <p className="text-green-200 mt-4 leading-relaxed">
@@ -57,7 +57,7 @@ export  const VideoPlayer = (props: VideoProps) => {
               )}
 
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col sm:flex-row md:flex-col gap-4">
               <a href="#" className="p-4 bg-green-500 text-sm flex items-center justify-center font-bold rounded gap-2 uppercase hover:bg-green-700 transition-colors">
                 <DiscordLogo size={24} />
                 Comunidade Discord
@@ -69,8 +69,7 @@ export  const VideoPlayer = (props: VideoProps) => {
             </div>
           </div>
 
-          <div className="gap-8 mt-20 grid grid-cols-2">
-
+          <div className="gap-8 mt-20 grid grid-cols-1 md:grid-cols-2">
             <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                 <div className="bg-green-700 h-full p-6 flex items-center">
                   <FileArrowDown size={40} />
@@ -79,7 +78,7 @@ export  const VideoPlayer = (props: VideoProps) => {
                   <strong  className="text-2xl">
                     Material Complementar
                     <p className="text-sm text-gray-200 mt-2">
-                      Acesse o amterial complementar para acelerar o seu desenvolvimento.
+                      Acesse o material complementar para acelerar o seu desenvolvimento.
                     </p>
                   </strong>
                 </div>

@@ -28,21 +28,21 @@ export const Subscriber = () => {
   }
 
   return (
-    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
+    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center px-8 md:px-2">
+      <div className="w-full max-w-[1100px] flex flex-col items-center justify-between mt-20 mx-auto grid-cols-1 lg:grid-cols-2 lg:flex-row">
         <div className="max-w-[640px]">
           <Logo />
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
+          <h1 className="mt-8 text-3xl md:text-[2.5rem] leading-tight">
             Construa uma  
             <strong className="text-blue-500"> aplicação completa</strong>,
             do zero, com 
             <strong className="text-blue-500"> React</strong>
           </h1>
-          <p className="mt-4 text-gray-200 leading-relaxed">
+          <p className="mt-4 text-gray-200 leading-relaxed my-3 lg:my-0">
             Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado
           </p>
         </div>
-        <div className="p-8 bg-gray-700 border border-gray-500 rounded">
+        <div className="p-8 bg-gray-700 border border-gray-500 rounded my-3 lg:my-0">
           <strong  className="text-2xl mb-6 block">
             Inscreva-se gratitamente
           </strong>
@@ -68,7 +68,7 @@ export const Subscriber = () => {
           </form>
         </div>
       </div>
-        <img src={codeMockup} alt="code mockup" className="mt-10" />
+        <img src={codeMockup} alt="code mockup" className="mt-10 hidden md:block" />
     </div>
   )
 }
